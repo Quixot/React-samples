@@ -2,6 +2,7 @@ import React from "react"
 import Form from "./components/Form"
 import Box from "./components/Box"
 import boxes from "./boxes"
+import Counter from "./components/Counter"
 
 function App() {
     const [squares, setSquares] = React.useState(boxes)
@@ -38,6 +39,7 @@ function App() {
     <>
       <Form />
       {squareElements}
+      <Counter />
     </>
   );
 }
