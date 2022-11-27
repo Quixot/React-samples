@@ -5,6 +5,7 @@ import boxes from "./boxes"
 import Counter from "./components/Counter"
 import UserCard from "./components/UserCard"
 import FormSample from "./components/FormSample"
+import Meme from "./components/Meme"
 
 function App() {
     const [squares, setSquares] = React.useState(boxes)
@@ -39,11 +40,24 @@ function App() {
 
     return (
     <>
-      <Form />
-      {squareElements}
-      <Counter />
-      <UserCard />
-      <FormSample />
+        <div className="container">
+            <Form />
+        </div>
+        <div className="container">
+            {squareElements}
+        </div>
+        <div className="container">
+            <Counter />
+        </div>
+        <div className="container">
+            <UserCard />
+        </div>
+        <div className="container">
+            <FormSample />
+        </div>
+        <div className="container">
+            <Meme />
+        </div>
     </>
   );
 }
