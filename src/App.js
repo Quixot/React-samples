@@ -6,6 +6,7 @@ import Counter from "./components/Counter"
 import UserCard from "./components/UserCard"
 import FormSample from "./components/FormSample"
 import Meme from "./components/Meme"
+import SimpleUseEffect from "./components/SimpleUseEffect"
 
 function App() {
     const [squares, setSquares] = React.useState(boxes)
@@ -41,6 +42,7 @@ function App() {
     return (
     <>
         <div className="container">
+            <h1>Forms</h1>
             <Form />
         </div>
         <div className="container">
@@ -57,6 +59,9 @@ function App() {
         </div>
         <div className="container">
             <Meme />
+        </div>
+        <div className="container">
+            <SimpleUseEffect />
         </div>
     </>
   );
